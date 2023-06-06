@@ -7,16 +7,12 @@ def compute(n):
             out *= i
     else:
         lim = n - 20
-        out = 0  # Initialize out as 0 to calculate sum correctly
-        for i in range(1, lim+1):  # Added +1 to include lim in the range
-            out += i  # Changed out = out + i to out += i for simplicity
+        out = 0  
+        for i in range(1, lim+1):  
+            out += i  
 
     return out
 
 n = int(input("Enter an integer: "))
 result = compute(n)
 print("Result:", result)
-
-# n = int(input("Enter an integer: "))
-# result = compute(n)
-# print(result)
